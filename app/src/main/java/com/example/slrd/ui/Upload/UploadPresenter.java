@@ -56,5 +56,6 @@ public class UploadPresenter extends BasePresenter<UploadView> {
                         uploadView.showToast("ERROR");
                     }
                 });
+
     }
 }

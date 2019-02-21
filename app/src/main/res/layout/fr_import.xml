@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:max="100"
-            android:progress="68" />
+            android:progress="0" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:textSize="15sp"
                 android:gravity="center"
                 android:textColor="@android:color/white"
-                android:text="68/100mb"
+                android:text="0/0mb"
                 />
             <TextView
                 android:id="@+id/percentDownloaded"
@@ -67,7 +67,7 @@
                 android:textSize="15sp"
                 android:gravity="center"
                 android:textColor="@android:color/white"
-                android:text="68%"
+                android:text="0%"
                 />
         </LinearLayout>
         <Button
