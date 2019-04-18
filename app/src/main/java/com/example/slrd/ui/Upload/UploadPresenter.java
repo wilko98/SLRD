@@ -30,7 +30,7 @@ public class UploadPresenter extends BasePresenter<UploadView> {
             intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE,true);
             intent.setAction(Intent.ACTION_GET_CONTENT);
             uploadView.showFilesToSelect(intent,"select file");
-//            uploadView.showSuccess();
+            uploadView.showSuccess();
         }catch (Exception e){
             uploadView.showError();
         }
@@ -43,7 +43,6 @@ public class UploadPresenter extends BasePresenter<UploadView> {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        // Get a URL to the uploaded content
                         Uri downloadUrl = taskSnapshot.getUploadSessionUri();
                         uploadView.showToast("file uploaded!");
                     }
@@ -51,8 +50,11 @@ public class UploadPresenter extends BasePresenter<UploadView> {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception exception) {
-                        // Handle unsuccessful uploads
-                        // ...
+                        //....
+                        *
+                        *   
+                        *
+                        //....
                         uploadView.showToast("ERROR");
                     }
                 });
